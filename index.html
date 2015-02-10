@@ -54,10 +54,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#wishlist">WishList</a>
+                        <a href="#about">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="#wishlist">WishList</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contanct</a>
@@ -117,67 +117,32 @@
                     <h2>WISHLIST</h2>
                     <hr class="star-primary">
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 wishlist-item">
-                    <a href="#wishlistModal1" class="wishlist-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                <ul>
+                  
+                  <!--
+                  <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+                  -->
+                  <li><span class="glyphicon glyphicon-unchecked" aria-hidden="true"></span>Save photo when to take by camera</li>
+                  <li><span class="glyphicon glyphicon-unchecked" aria-hidden="true"></span>Sort Notes</li>
+                  <li><span class="glyphicon glyphicon-unchecked" aria-hidden="true"></span>Search Notes</li>
+                </ul>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <form name="sentMessage" class="requestForm" id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Request</label>
+                                <textarea rows="5" class="form-control" placeholder="Please Send Your Request or Any Idea!" id="message" required data-validation-required-message="Please enter a content."></textarea>
+                                <p class="help-block text-danger"></p>
                             </div>
                         </div>
-                        <img src="img/wishlist/cabin.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 wishlist-item">
-                    <a href="#wishlistModal2" class="wishlist-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="button">Send a New Request</button>
                             </div>
                         </div>
-                        <img src="img/wishlist/cake.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 wishlist-item">
-                    <a href="#wishlistModal3" class="wishlist-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/wishlist/circus.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 wishlist-item">
-                    <a href="#wishlistModal4" class="wishlist-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/wishlist/game.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 wishlist-item">
-                    <a href="#wishlistModal5" class="wishlist-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/wishlist/safe.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 wishlist-item">
-                    <a href="#wishlistModal6" class="wishlist-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/wishlist/submarine.png" class="img-responsive" alt="">
-                    </a>
+                    </form>
                 </div>
             </div>
         </div>
@@ -195,8 +160,6 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
                     <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
@@ -293,7 +256,7 @@
         </a>
     </div>
 
-    <!-- Portfolio Modals -->
+    <!-- Wishlist Modals -->
     <div class="wishlist-modal modal fade" id="wishlistModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
