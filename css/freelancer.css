@@ -36,75 +36,52 @@ h6 {
     font-weight: 100;
 }
 
-.img-centered {
-    margin: 0 auto;
+.navbar-default {
+  background-color:rgba(0,0,0,0.0);
 }
 
-header {
-    text-align: center;
-    color: #fff;
-    background: #18bc9c;
+.navbar-fixed-top.navbar-shrink {
+  color: #ef7169;
+  padding: 10px 0;
+  -webkit-transition: background-color .3s;
+  -moz-transition: background-color .3s;
+  transition: background-color .3s;
+  background-color:rgba(255,255,255,1);
+  border-bottom: 1px solid #E7E7E7;
 }
 
-header .container {
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-
-header img {
-    display: block;
-    margin: 0 auto 20px;
-}
-
-header .intro-text .name {
-    display: block;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 2em;
-    font-weight: 100;
-}
-
-header .intro-text .skills {
-    font-size: 1.25em;
-    font-weight: 100;
+.navbar-default .navbar-nav>.active>a {
+  background-color: #ef7169;
 }
 
 @media(min-width:768px) {
-    header .container {
-        padding-top: 200px;
-        padding-bottom: 100px;
-    }
+  .navbar-fixed-top {
+      padding: 25px 0;
+      -webkit-transition: padding .3s;
+      -moz-transition: padding .3s;
+      transition: padding .3s;
+  }
 
-    header .intro-text .name {
-        font-size: 4.75em;
-    }
+  .navbar-fixed-top .navbar-brand {
+      font-size: 2em;
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      transition: all .3s;
+  }
 
-    header .intro-text .skills {
-        font-size: 1.75em;
-    }
-}
+  .navbar-fixed-top.navbar-shrink {
+    color: #ef7169;
+    padding: 10px 0;
+    -webkit-transition: background-color .3s;
+    -moz-transition: background-color .3s;
+    transition: background-color .3s;
+    background-color:rgba(255,255,255,1);
+    border-bottom: 1px solid #E7E7E7;
+  }
 
-@media(min-width:768px) {
-    .navbar-fixed-top {
-        padding: 25px 0;
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        transition: padding .3s;
-    }
-
-    .navbar-fixed-top .navbar-brand {
-        font-size: 2em;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
-    }
-
-    .navbar-fixed-top.navbar-shrink {
-        padding: 10px 0;
-    }
-
-    .navbar-fixed-top.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
-    }
+  .navbar-fixed-top.navbar-shrink .navbar-brand {
+      font-size: 1.5em;
+  }
 }
 
 .navbar {
@@ -128,6 +105,95 @@ header .intro-text .skills {
 .navbar-inverse {
     border: 0;
 }
+
+.img-centered {
+    margin: 0 auto;
+}
+
+header {
+  height: auto;
+  text-align: center;
+  color: #fff;
+  background: #18bc9c;
+  background: url("../img/coffeecup.jpg") no-repeat bottom center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center
+}
+
+header .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.intro-text {
+  margin-top: -47px;
+  margin-bottom: 50px;
+}
+
+header .intro-text .name {
+    display: block;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+header .intro-text .skills {
+    font-size: 1.25em;
+    font-weight: 100;
+}
+
+.download-button {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1.25em;
+  font-weight: 100;
+  color: #ef7169;  
+  -webkit-transition: color .3s;
+  -moz-transition: color .3s;
+  transition: color .3s;
+  border: 2px solid #ef7169;
+  width: 10%;
+  height: 10%;
+  border-radius: 10px;
+  padding: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.download-button:hover {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: color .3s;
+  -moz-transition: color .3s;
+  transition: color .3s;
+  background-color: #ef7169;
+  -webkit-transition: background-color .3s;
+  -moz-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+@media(min-width:768px) {
+    header .container {
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+
+    header .intro-text .name {
+        font-size: 4.75em;
+    }
+
+    header .intro-text .skills {
+        font-size: 1.75em;
+    }
+
+    header .download-button {
+      font-size: 3em;
+    }
+
+}
+
 
 section {
     padding: 100px 0;
@@ -224,7 +290,7 @@ section.success {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
+    color: #ef7169;
     background: #fff;
 }
 
