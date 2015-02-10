@@ -197,6 +197,7 @@ header .intro-text .skills {
 
 section {
     padding: 100px 0;
+    padding-bottom: 0px;
 }
 
 section h2 {
@@ -205,8 +206,19 @@ section h2 {
 }
 
 section.success {
-    color: #fff;
-    background: #18bc9c;
+    color: #878787;
+    background: #fff;
+}
+
+.center {
+  text-align: center;
+}
+
+.screenshot {
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 45%;
 }
 
 @media(max-width:767px) {
@@ -216,6 +228,13 @@ section.success {
 
     section.first {
         padding-top: 75px;
+    }
+
+    .screenshot {
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+      width: 100%;
     }
 }
 
