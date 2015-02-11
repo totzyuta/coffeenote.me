@@ -269,6 +269,12 @@ section.success {
     }
 }
 
+@media(min-width:1200px) {
+  section ul {
+    padding-top: 90px;
+  }
+}
+
 #wishlist .wishlist-item {
     right: 0;
     margin: 0 0 15px;
@@ -323,6 +329,12 @@ section.success {
 @media(min-width:767px) {
     #wishlist .wishlist-item {
         margin: 0 0 30px;
+    }
+}
+
+@media(max-width:767px) {
+    section ul {
+      margin-left: -40px;
     }
 }
 
@@ -401,14 +413,11 @@ form .row:first-child .floating-label-form-group {
 }
 
 
-section ul {
-  margin-top: 20px;
-}
 
 section li {
   margin: 15px;
   margin-left: 30px;
-  font-size: 1.5em;
+  font-size: 1.25em;
   color: #878787;
   list-style-type: none;
 }
