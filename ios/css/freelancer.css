@@ -40,6 +40,23 @@ h6 {
   background-color:rgba(0,0,0,0.0);
 }
 
+.navbar-default .navbar-toggle {
+  border-color: #ef7169;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #ef7169;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ef7169;
+}
+
+
+.navbar-default .navbar-toggle:hover .icon-bar, .navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: #fff;
+}
+
 .navbar-fixed-top.navbar-shrink {
   color: #ef7169;
   padding: 10px 0;
@@ -133,6 +150,13 @@ header .container {
   margin-bottom: 50px;
 }
 
+@media(max-width:768px) {
+  .intro-text {
+    margin-top: -10px;
+  }
+}
+
+
 header .intro-text .name {
     display: block;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -161,6 +185,13 @@ header .intro-text .skills {
   padding-right: 30px;
   padding-left: 30px;
 }
+
+@media(max-width:768px) {
+  .download-button {
+    font-weight: 700;
+  }
+}
+
 
 .download-button:hover {
   text-decoration: none;
@@ -465,4 +496,13 @@ footer .footer-below {
 
 .scroll-top .btn:focus {
   outline: 0;
+}
+
+.btn-primary {
+  background-color: #ef7169;
+  border: none;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  background-color: #ef7169;
 }
