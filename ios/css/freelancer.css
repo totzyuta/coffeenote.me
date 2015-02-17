@@ -88,7 +88,7 @@ h6 {
 
   .navbar-fixed-top.navbar-shrink {
     color: #ef7169;
-    padding: 10px 0;
+    padding: 0px 0;
     -webkit-transition: background-color .3s;
     -moz-transition: background-color .3s;
     transition: background-color .3s;
