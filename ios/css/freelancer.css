@@ -275,6 +275,10 @@ section.success {
   }
 }
 
+.wishlist-text {
+  color: #878787;
+}
+
 #wishlist .wishlist-item {
     right: 0;
     margin: 0 0 15px;
