@@ -1,3 +1,9 @@
 test:
   override:
     - ./dummy_test_script.sh
+
+deployment:
+  production: # ラベルなのでなんでもいい
+  branch: master
+  commands: 
+    - deployment-to-production.sh
