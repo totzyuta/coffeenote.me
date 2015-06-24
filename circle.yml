@@ -1,23 +1,3 @@
-machine:
-  timezone: Asia/Tokyo
-
-checkout:
-  post:
-    - git submodule update --init --recursive
-
-dependencies:
-  pre:
-    - git config --global user.name "totzYuta"
-    - git config --global user.email "yuta.totz@gmail.com"
-
-deployment:
-  master:
-    branch: master
-    commands:
-      - git clone https://github.com/totzYuta/coffee-note.com.git
-      - cd public && git add .
-      - cd public && git commit -m "[ci skip] publish"
-
 test:
-override:
-  - ./dummy_test_script.sh     - cd public && git push origin master
+  override:
+    - ./dummy_test_script.sh
