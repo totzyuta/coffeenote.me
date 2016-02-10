@@ -1,3 +1,3 @@
-# Web Site for CoffeeNote for iOS
+# Web Site for CoffeeNote App iOS
 
-http://coffee-note.com/ios/
+http://coffeenote.me/ios/
